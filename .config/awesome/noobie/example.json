@@ -1,0 +1,42 @@
+{
+  "widget": {
+    "icon": "smile",
+    "text": "noobie",
+    "mouse_actions": {
+      "on_scroll_up": "echo 'scroll up'",
+      "on_scroll_down": "echo 'scroll down'",
+      "on_right_click": "echo 'right click'"
+    }
+  },
+  "menu": {
+    "items": [
+      {
+        "icon": "https://avatars.githubusercontent.com/u/9363150?v=4",
+        "icon_size": 40,
+        "title": "Say hi!",
+        "onclick": "notify-send 'hi!'"
+      },
+      {
+        "icon": "terminal",
+        "title": "Execute some script",
+        "onclick": "/tmp/somescript.sh"
+      },
+      {
+        "type": "header",
+        "title": "Header"
+      },
+      {
+        "icon": "slack",
+        "title": "OpenSlack",
+        "onclick": "xdg-open https://slack.com"
+      },
+      {
+        "type" : "separator"
+      },
+      {
+        "title": "Menu item with no icon and no action"
+      }
+    ]
+  }
+}
+
