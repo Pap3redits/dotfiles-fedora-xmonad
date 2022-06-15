@@ -29,7 +29,6 @@ sddm
 net-tools
 nvidia-settings
 pulseaudio
-awesome
 nitrogen
 git
 discord
@@ -42,3 +41,4 @@ flameshot
 NetworkManager
 network-manager-applet
 qalculate-gtk
+xmonad
