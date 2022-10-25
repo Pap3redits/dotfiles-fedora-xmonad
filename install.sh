@@ -31,6 +31,9 @@ sleep 1
 sudo dnf -y --allowerasing install $(cat packages|xargs)
 sudo systemctl enable sddm
 
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install md.obsidian.Obsidian
+
 echo
 echo "################################################################################################"
 echo "#################################    Changing Shell   ##########################################"
