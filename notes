@@ -3,5 +3,6 @@
 https://tayeh.me/posts/install_the_nvidia_drivers_on_fedora/
 
 
-Add ~./Xdefaults file to the folder
+- Add ~./Xdefaults file to the folder
 
+- Automate install of WPSOffice
