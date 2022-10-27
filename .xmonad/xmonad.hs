@@ -44,7 +44,7 @@ myStartupHook = do
     setWMName "LG3D"
 
 myTerminal = "alacritty"
-myBrowser = "brave"
+myBrowser = "brave-browser"
 
 -- colours
 normBord = "#4c566a"
@@ -138,11 +138,11 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_Escape), spawn $ "xkill" )
   , ((modMask, xK_Return), spawn $ (myTerminal) )
   , ((modMask, xK_b), spawn $ "blueberry" )
-  , ((modMask, xK_d), spawn $ "discord --no-sandbox" )
-  , ((modMask, xK_o), spawn $ "md.obsidian.Obsidian" )
+  , ((modMask, xK_d), spawn $ "Discord --no-sandbox" )
+  , ((modMask, xK_o), spawn $ "flatpak run md.obsidian.Obsidian" )
   , ((modMask, xK_w), spawn $ (myBrowser) )
   , ((modMask, xK_s), spawn $ "steam" )
-  , ((modMask, xK_p), spawn $ "rofi -show drun -fullscreen" )
+  , ((modMask, xK_p), spawn $ "rofi -no-config -no-lazy-grab -show drun -modi drun -theme ~/.config/polybar/grayblocks/scripts/rofi/launcher.rasi" )
   , ((modMask, xK_t), spawn $ "ticktick" )
   , ((modMask, xK_h), spawn $ (myTerminal) ++ " -e htop" )
 
