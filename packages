@@ -65,3 +65,4 @@ libXrandr pam-devel
 pkgconf
 xcb-util-image-devel
 xcb-util-xrm-devel
+i3lock
