@@ -1,0 +1,63 @@
+#+TITLE: Fish Config
+#+AUTHOR: Christian Schmidt
+#+PROPERTY: header-args :tangle config.fish
+
+* Opening Clause
+#+begin_src shell
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+
+    #sets the shell greeting
+    set -U fishell_greeting
+#+end_src
+* Variables
+#+begin_src shell
+    set EDITOR 'emacs'
+    set VISUAL 'emacs'
+#+end_src
+* Aliases
+These replace ls with the exa command. This allows for better formatting when listign the files of a directory
+#+begin_src shell
+    alias l='exa -lahF --color=always --icons --sort=size --group-directories-first'
+    alias ls='exa -lhF --color=always --icons --sort=size --group-directories-first'
+    alias lst='exa -lahFT --color=always --icons --sort=size --group-directories-first'
+#+end_src
+Adding color the the grep commands
+#+begin_src shell
+    alias grep='grep --color=auto'
+    alias egrep='egrep --color=auto'
+    alias fgrep='fgrep --color=auto'
+#+end_src
+Shutdown and Reboot
+#+begin_src shell
+    alias ssn='sudo shutdown now'
+    alias sr='sudo reboot'
+#+end_src
+modifying the df and du commands
+#+begin_src shell
+    alias df='df -h'
+    alias du='du -h'
+#+end_src
+#+begin_src shell
+    alias sys='sudo systemctl'
+#+end_src
+* Startup
+Starts the startshellip prompt for the fishell shellell
+#+begin_src shell
+    starship init fish | source
+#+end_src
+Starts neofetch
+#+begin_src shell
+    neofetch
+#+end_src
+* PATHS
+List of directories added to the PATH
+#+begin_src shell
+    fish_add_path /home/christian/bin
+    fish_add_path /home/christian/.screenlayout
+    fish_add_path /home/christian/.bashell.d
+    fish_add_path /home/christian/.emacs.d/bin
+#+end_src
+#+begin_src shell
+end
+#+end_src
