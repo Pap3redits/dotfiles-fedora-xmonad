@@ -31,8 +31,15 @@ sleep 1
 sudo dnf -y --allowerasing install $(cat packages|xargs)
 sudo systemctl enable sddm
 
+# Obsidian Install 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install md.obsidian.Obsidian
+
+# Vim Plugin Install 
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# BetterLockScreen Install 
+
 
 echo
 echo "################################################################################################"
