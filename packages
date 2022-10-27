@@ -28,7 +28,6 @@ arc-theme.noarch
 sddm
 net-tools
 nvidia-settings
-pulseaudio
 nitrogen
 git
 discord
@@ -52,3 +51,4 @@ mangohud.x86_64
 xsetroot
 neovim
 python3-neovim
+
