@@ -45,7 +45,7 @@ xmonad
 ghc-dbus-devel.x86_64
 xorg-x11-drv-nvidia-cuda
 polybar
-pipewire-pulseaudio
+pulseaudio
 xorg-x11-drv-nvidia-cuda
 mangohud.x86_64
 xsetroot
