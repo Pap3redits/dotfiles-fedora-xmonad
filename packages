@@ -50,3 +50,5 @@ pipewire-pulseaudio
 xorg-x11-drv-nvidia-cuda
 mangohud.x86_64
 xsetroot
+neovim
+python3-neovim
