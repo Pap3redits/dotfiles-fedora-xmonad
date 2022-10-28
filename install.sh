@@ -55,6 +55,8 @@ cp betterlockscreen /usr/local/bin/
 cp system/betterlockscreen@.service /usr/lib/systemd/system/
 systemctl enable betterlockscreen@$USER
 
+# Enable Sound
+systemctl --user enable pipewire-pulse.service pipewire-pulse.socket
 
 echo
 echo "################################################################################################"
