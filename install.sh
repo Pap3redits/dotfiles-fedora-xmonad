@@ -60,6 +60,7 @@ systemctl --user enable pipewire-pulse.service pipewire-pulse.socket
 
 # Enable Virtualization
 sudo systemctl enable libvirtd
+sudo usermod -aG libvirt $USER
 
 echo
 echo "################################################################################################"
