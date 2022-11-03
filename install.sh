@@ -58,6 +58,9 @@ systemctl enable betterlockscreen@$USER
 # Enable Sound
 systemctl --user enable pipewire-pulse.service pipewire-pulse.socket
 
+# Enable Virtualization
+sudo systemctl enable libvirtd
+
 echo
 echo "################################################################################################"
 echo "#################################    Nvidia Setup   ############################################"
