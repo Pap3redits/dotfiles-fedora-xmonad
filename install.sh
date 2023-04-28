@@ -3,7 +3,7 @@
 # Copying over config files
 cp -r .config $HOME/.config
 cp -r .xmonad $HOME/.xmonad
-cp -r ./fonts/* $HOME/.local/share/fonts
+cp -r ./fonts/* $HOME/.local/share/fonts/
 sudo cp dnf.conf /etc/dnf/dnf.conf
 mkdir ~/Documents ~/Pictures ~/Downloads
 
