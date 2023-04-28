@@ -73,3 +73,4 @@ xorg-x11-drv-nvidia-cuda
 vulkan-tools
 @virtualization
 flatpak
+starship

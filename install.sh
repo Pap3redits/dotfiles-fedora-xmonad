@@ -29,12 +29,23 @@ echo
 sleep 1
 
 # DNF package install
-sudo dnf -y --allowerasing install $(cat packages|xargs)
+sudo dnf update
+sudo dnf copr enable atim/starship
+sudo dnf -y --allowerasing install $(cat packages)
 sudo systemctl enable sddm
 
 # Obsidian Install 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install md.obsidian.Obsidian
+
+#VSCode Install
+flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
+
+#Discord Install
+flatpak install flathub com.discordapp.Discord
+
+#ProtonupQT Install
+flatpak install flathub net.davidotek.pupgui2
 
 # Vim Plugin Install 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
