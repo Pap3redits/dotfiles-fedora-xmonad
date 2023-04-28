@@ -16,12 +16,10 @@ exa
 lxappearance
 bluez
 bluez-tools.x86_64
-blueberry
 dmenu
 openssh
 piper
 ripgrep
-starship
 thunar-archive-plugin
 emacs
 arc-theme.noarch
@@ -55,13 +53,11 @@ nodejs
 autoconf
 automake
 cairo-devel
-fontconfig gcc
 libev-devel
 libjpeg-turbo-devel
 libXinerama
 libxkbcommon-devel
 libxkbcommon-x11-devel
-libXrandr pam-devel
 pkgconf
 xcb-util-image-devel
 xcb-util-xrm-devel
@@ -76,3 +72,4 @@ xorg-x11-drv-nvidia-libs.i686
 xorg-x11-drv-nvidia-cuda
 vulkan-tools
 @virtualization
+flatpak
