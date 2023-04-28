@@ -74,3 +74,4 @@ vulkan-tools
 @virtualization
 flatpak
 starship
+util-linux-user
