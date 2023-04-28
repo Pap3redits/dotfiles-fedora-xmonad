@@ -75,3 +75,4 @@ vulkan-tools
 flatpak
 starship
 util-linux-user
+gcc-c++
