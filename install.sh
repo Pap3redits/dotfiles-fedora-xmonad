@@ -3,7 +3,6 @@
 # Copying over config files
 cp -r .config $HOME/.config
 cp -r .xmonad $HOME/.xmonad
-cp -r ./fonts/* $HOME/.local/share/fonts/
 sudo cp dnf.conf /etc/dnf/dnf.conf
 mkdir ~/Documents ~/Pictures ~/Downloads
 
@@ -36,17 +35,14 @@ sudo dnf -y --allowerasing install $(cat packages)
 sudo systemctl enable sddm
 
 # Obsidian Install 
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install md.obsidian.Obsidian
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install md.obsidian.Obsidian
 
 #VSCode Install
-flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
-
-#Discord Install
-flatpak install flathub com.discordapp.Discord
+sudo flatpak install https://flathub.org/repo/appstream/com.visualstudio.code.flatpakref
 
 #ProtonupQT Install
-flatpak install flathub net.davidotek.pupgui2
+sudo flatpak install flathub net.davidotek.pupgui2
 
 # Vim Plugin Install 
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -108,6 +104,7 @@ echo "##########################################################################
 echo "#################################    Installing Doom Emacs   ################################"
 echo "################################################################################################"
 echo
+cp -r ./fonts/* $HOME/.local/share/fonts/
 
 cd
 git clone --depth 1 https://github.com/hlissner/doom-emacs ~/.emacs.d
