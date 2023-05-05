@@ -137,7 +137,7 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
   , ((modMask, xK_x), spawn $ "arcolinux-logout" )
   , ((modMask, xK_Escape), spawn $ "xkill" )
   , ((modMask, xK_Return), spawn $ (myTerminal) )
-  , ((modMask, xK_b), spawn $ "blueberry" )
+  , ((modMask, xK_b), spawn $ "blueman-manager" )
   , ((modMask, xK_d), spawn $ "Discord --no-sandbox" )
   , ((modMask, xK_o), spawn $ "flatpak run md.obsidian.Obsidian" )
   , ((modMask, xK_w), spawn $ (myBrowser) )
